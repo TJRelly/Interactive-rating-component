@@ -13,6 +13,7 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution {
+      position: relative;
       font-size: 11px;
       text-align: center;
     }
@@ -43,17 +44,14 @@
       <button>SUBMIT</button>
       <!-- Rating state end -->
     </div>
-
-    <!-- Thank you state start -->
-
-    You selected <!-- Add rating here --> out of 5
-
-    Thank you!
-
-    We appreciate you taking the time to give a rating. If you ever need more support,
-    don’t hesitate to get in touch!
-
-    <!-- Thank you state end -->
+    <div class="flex">
+      <!-- Thank you state start -->
+      <svg></svg>
+      <p class="rating">You selected <!-- Add rating here --> out of 5</p>
+      <h1>Thank you!</h1>
+      <p> We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+      <!-- Thank you state end -->
+    </div>
   </main>
 
   <div class="attribution">
