@@ -21,11 +21,33 @@ svg {
 
 /********* Variables *********/
 
-/********** Colors ***********/
+:root {
+    /********** Colors ***********/
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
 
-/******** Typography *********/
+    /******** Typography *********/
+    --fs-400: 0.9375rem;
+
+    --fw-regular: 400;
+    --fw-bold: 700;
+
+    --font-defaut: Overpass, sans-serif;
+}
+
+
 
 /*********** Styles *********/
+
+body {
+    font-size: var(--fs-400);
+    font-weight: var(--fw-regular);
+    font-family: var(--font-defaut);
+}
 
 .thank-you {
     display: none;
