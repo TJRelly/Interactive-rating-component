@@ -27,6 +27,22 @@ svg {
 
 /*********** Styles *********/
 
+.thank-you {
+    display: none;
+}
 
+.grid {
+    display: grid;
+    align-items: start;
+}
+
+main {
+    min-height: 100vh;
+    place-content: center;
+}
+
+.rate-us {
+    width: 20.3125rem;
+}
 
 /*********** Media *********/
