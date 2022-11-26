@@ -69,22 +69,34 @@ main {
     place-content: center;
 }
 
-.rate-us {
+
+.rate-us,
+.thank-you {
     max-width: 22rem;
     background: var(--dark-blue);
     padding: 1.5625rem 1.675rem 1.875rem;
     border-radius: 1.25rem;
 }
 
-.rate-us h1 {
+.rate-us h1,
+.thank-you h1 {
     font-size: var(--fs-500);
     font-weight: var(--fw-bold);
     color: var(--white);
 }
 
-.rate-us p {
+.rate-us p,
+.thank-you p {
     line-height: 1.25rem;
     padding-bottom: 0.5rem;
+}
+
+.thank-you {
+    padding: 1.5625rem 0.6rem 1.875rem;
+}
+
+.thank-you svg {
+    margin: .5rem auto .5rem;
 }
 
 .circle {
@@ -115,8 +127,29 @@ button:hover {
     cursor: pointer;
 }
 
-.thank-you {
+.thank-you * {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.thank-you .rating {
+    background: var(--medium-blue);
+    padding: 0.3rem 0.8rem;
+    padding-top: 0.5rem;
+    color: var(--orange);
+    border-radius: 5rem;
+}
+
+.thank-you h1 {
+    margin: 0.25rem 0 -.5rem;
+}
+
+.rate-us {
     display: none;
+}
+
+.thank-you {
+    display: grid;
 }
 
 .attribution {
@@ -126,16 +159,26 @@ button:hover {
     width: 100%;
     text-align: center;
     bottom: 10%;
-  }
+}
 
-  .attribution a {
+.attribution a {
     color: var(--orange);
-  }
+}
 
 @media (min-width: 600px) {
+
     .rate-us {
         max-width: 26rem;
     }
+
+    .thank-you {
+        max-width: 24.7rem;
+        padding: 1.5625rem 1.8rem 1.875rem;
+    }
+
+    /* .thank-you {
+        padding: 1.5625rem 1.875rem 1.875rem;
+    } */
 }
 
 /*********** Media *********/
