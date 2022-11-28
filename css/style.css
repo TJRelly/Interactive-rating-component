@@ -99,7 +99,8 @@ main {
     margin: .5rem auto .5rem;
 }
 
-.circle {
+.circle,
+.circle-selectors {
     display: grid;
     place-items: center;
     border-radius: 50%;
@@ -108,22 +109,40 @@ main {
     background: var(--medium-blue);
 }
 
+button{
+    border: none;
+    outline: none;
+    color: var(--light-grey);
+}
+
 .flex-group .circle:hover {
     background: var(--orange);
     color: var(--white);
     cursor: pointer;
 }
 
-button {
+.submit {
     background: var(--orange);
     color: var(--white);
     padding: 0.9375rem;
     border-radius: 5rem;
 }
 
-button:hover {
+.submit:hover {
     background: var(--white);
     color: var(--orange);
+    cursor: pointer;
+}
+
+.circle-selectors:hover{
+    background: var(--orange);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.circle-selectors:focus {
+    background: var(--light-grey);
+    color: var(--white);
     cursor: pointer;
 }
 
@@ -144,12 +163,8 @@ button:hover {
     margin: 0.25rem 0 -.5rem;
 }
 
-.rate-us {
-    display: none;
-}
-
 .thank-you {
-    display: grid;
+    display: none;
 }
 
 .attribution {
@@ -175,10 +190,6 @@ button:hover {
         max-width: 24.7rem;
         padding: 1.5625rem 1.8rem 1.875rem;
     }
-
-    /* .thank-you {
-        padding: 1.5625rem 1.875rem 1.875rem;
-    } */
 }
 
 /*********** Media *********/
