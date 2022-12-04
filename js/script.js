@@ -9,8 +9,7 @@ circleArr.forEach(circle => {
     circle.onclick = changeRating
 
     function changeRating() {
-        selectedRating.innerText = circle.innerText
-        console.log(selectedRating.innerText)
+        selectedRating.innerText = circle.innerText 
     }
 
 })
