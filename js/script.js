@@ -25,7 +25,7 @@ function ThankYou() {
 
     } else {
         alert('Please select a rating')
-        console.error('no rating selected', 'Error')
+        console.error('no rating selected', 'error')
     }
 
 }
